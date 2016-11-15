@@ -79,7 +79,8 @@ _copyright ()  {
   echo -e "\tsoftware and you are welcome to redistribute it under certain"
   echo -e "\tconditions, specified at: http://www.gnu.org/licenses/gpl.html"
 }
-_usage ()      { echo "usage: $SNAME LABEL [rw|ro|u]" ; _copyright ; }
+#_usage ()      { echo -e "\nUsage: \t${SNAME} LABEL [rw|ro|u]" ; _copyright ; }
+_usage ()      { echo -e "Usage: \t${SNAME} LABEL [rw|ro|u]\n" ; }
 _error()       { echo "!!! Error: $1. !!!" >&2 ; echo -n "$BEEP"; _usage ; exit 1 ; }
 _error_parm()  { _error "$2 Parameter Missing [$1]" ; }
 _error_parm2() { _error "Command is wrong (only \"rw, ro, or u\") is alowed, not \"$1\"" ; }
@@ -113,6 +114,7 @@ _print_dev_labels () {
   for d in $(find /dev/disk/by-label -type l) ; do
     echo -e "$(readlink -m $d)\t<-  $(basename $d)"
   done
+  echo ""
   _usage
   exit 1
   }
