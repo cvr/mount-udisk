@@ -22,7 +22,7 @@ author:  maxdev137 <maxdev137@sbcglobal.net> (original)
          Carlos Veiga Rodrigues <cvrodrigues@gmail.com>
 
 This bash script was originally made by maxdev137 and made available at
-http://stackoverflow.com/questions/483460/ with the GNU GPL v3 copyright.
+<http://stackoverflow.com/questions/483460/> with the GNU GPL v3 copyright.
 Originally it was a frontend to `udisks`. I made changes to output a list
 of available devices using `lsblk` and added commands to use `udisksctl`
 and `gvfs-mount` (the later are commented).
@@ -38,5 +38,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 For more details consult the GNU General Public License at:
-http://www.gnu.org/licenses/gpl.html
+<http://www.gnu.org/licenses/gpl.html>
 
